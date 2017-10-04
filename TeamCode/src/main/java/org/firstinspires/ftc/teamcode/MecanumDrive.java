@@ -23,7 +23,6 @@ import java.lang.Math;
  */
 
 @TeleOp(name="MecanumDrive", group="Drive Opmodes")
-@Disabled
 public class MecanumDrive extends OpMode
 {
     // Declare OpMode members.
@@ -102,14 +101,14 @@ public class MecanumDrive extends OpMode
         // rightPower = -gamepad1.right_stick_y ;
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
-        if(Math.abs(gamepad1.left_stick_y) > threshold || Math.abs(gamepad1.left_stick_x) > threshold){
+        if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
             FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
             FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
             BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
             BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
         }
 
-        if(Math.abs(gamepad1.right_stick_x) > threshold){
+        if(Math.abs(gamepad1.right_stick_x) != 0){
             FRPower = (-gamepad1.right_stick_x);
             FLPower = (-gamepad1.right_stick_x);
             BRPower = (gamepad1.right_stick_x);
