@@ -4,12 +4,24 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/xml/pushbot.xml"
     },
     {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/rev_scoot.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/rev_scoot.xml"
+    },
+    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/squarebot.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/xml/squarebot.xml"
     },
     {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/k9legacybot.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/k9legacybot.xml"
+    },
+    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/app_settings.xml",
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/src/main/res/xml/app_settings.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/device_filter.xml",
+        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/src/main/res/xml/device_filter.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/rev_scoot.xml",
@@ -20,8 +32,24 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/xml/advanced_rc_settings.xml"
     },
     {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/pushbot.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/pushbot.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/k9usbbot.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/k9usbbot.xml"
+    },
+    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/k9legacybot.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/xml/k9legacybot.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/pushbotsens.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/pushbotsens.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/app_settings.xml",
+        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/src/main/res/xml/app_settings.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/maxmodules.xml",
@@ -36,7 +64,19 @@
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/src/main/res/xml/device_filter.xml"
     },
     {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/squarebot.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/squarebot.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/advanced_rc_settings.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/advanced_rc_settings.xml"
+    },
+    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/pushbotsens.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/xml/pushbotsens.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/xml/maxmodules.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/xml/maxmodules.xml"
     }
 ]

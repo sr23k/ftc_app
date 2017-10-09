@@ -1,51 +1,55 @@
 [
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml",
-        "source": "/Users/neelraja/.android/build-cache/5e3129eb4063cb204d5373ef4094b1edf1789c76/output/res/layout/activity_programming_mode.xml"
-    },
-    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_address_update.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_lynx_address_update.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/device_interface_module.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/device_interface_module.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_configure_from_template.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_configure_from_template.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_swap_usb_devices.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_swap_usb_devices.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_remembered_groups.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_wifi_remembered_groups.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_devices.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/digital_devices.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_device_lynx.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/digital_device_lynx.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_about.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_about.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_program_and_manage.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/item_list_parent.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/item_list_parent.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/layout/activity_ftc_controller.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/servo.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_configuration.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_configuration.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
-        "source": "/Users/neelraja/.android/build-cache/3d5da91bd48c3cff7ffb2ba2bf57c855c8960942/output/res/layout/feedback.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/digital_device.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/pwm_device.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/pwm_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_devices.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/digital_devices.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/legacy.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_input_device.xml",
@@ -56,40 +60,44 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/banner_parent.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_swap_usb_devices.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_swap_usb_devices.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/lynx_module_configure_address.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/i2cs.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/i2cs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_input_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/analog_input_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/motor_list.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/motor_list.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_generic_settings.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_generic_settings.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo_list.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/servo_list.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_program_and_manage.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/item_list_parent.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/item_list_parent.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_fw_update.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_lynx_fw_update.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_config_wifi_direct.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_config_wifi_direct.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/device_interface_module.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/device_interface_module.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_device_lynx.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/digital_device_lynx.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrices.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/matrices.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/port_attached_row.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/port_attached_row.xml"
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_config_wifi_direct.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_config_wifi_direct.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/color_list_preference_line_item.xml",
@@ -104,12 +112,20 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/motor_controller_banner.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_load.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_load.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrix_devices.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/matrix_devices.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_output_device.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_output_device.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_configuration.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_ftc_configuration.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address_spin_item.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/lynx_module_configure_address_spin_item.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_fw_update.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_ftc_lynx_fw_update.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/info_button.xml",
@@ -128,40 +144,20 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/i2c_device.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/file_info.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/file_info.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/lynx_usb_device.xml"
-    },
-    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_configure_from_template.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_configure_from_template.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/simple_device.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/simple_device.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_remembered_groups.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_ftc_wifi_remembered_groups.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_wifi_channel_selector.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_address_update.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_ftc_lynx_address_update.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_view_logs.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_view_logs.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_inputs.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/pwms.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/pwms.xml"
-    },
-    {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/button_list.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/info_button.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/info_button.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_blocks.xml",
@@ -172,28 +168,36 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/red_line.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/i2cs.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/i2cs.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/pwms.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/pwms.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_outputs.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_outputs.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_load.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_load.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/header.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/lynx_usb_device.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrix_devices.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/matrix_devices.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_inspection.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/24ecc4fdedf89a27582d38b6f1776c8c1ce17bb1/output/res/layout/activity_inspection.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/gray_line.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/servo.xml"
     },
     {
-        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/motor_list.xml",
-        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/motor_list.xml"
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/loading_indicator_overlay.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/f4a6077c1925cfc9af7408f212bf8a5868e370b4/output/res/layout/loading_indicator_overlay.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo_list.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/servo_list.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/port_attached_row.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/port_attached_row.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/loading_indicator_overlay.xml",
@@ -212,6 +216,218 @@
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/motor.xml"
     },
     {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrices.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/matrices.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml",
+        "source": "/Users/neelraja/.android/build-cache/5e3129eb4063cb204d5373ef4094b1edf1789c76/output/res/layout/activity_programming_mode.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/i2c_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/i2c_device.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/device_interface_module.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/device_interface_module.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/digital_devices.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/digital_devices.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_program_and_manage.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_configuration.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_configuration.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/servo.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
+        "source": "/Users/neelraja/.android/build-cache/3d5da91bd48c3cff7ffb2ba2bf57c855c8960942/output/res/layout/feedback.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/simple_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/simple_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/gray_line.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/template_info.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/template_info.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_swap_usb_devices.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_swap_usb_devices.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo_list.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/servo_list.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/header.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_fw_update.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_lynx_fw_update.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_config_wifi_direct.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_config_wifi_direct.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrices.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/matrices.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_ftc_wifi_channel_selector.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/port_attached_row.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/port_attached_row.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/motor_controller_banner.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_view_logs.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_view_logs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/banner_parent.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/banner_parent.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_load.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_load.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/analog_inputs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_outputs.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/analog_outputs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_generic_settings.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/activity_generic_settings.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_output_device.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_output_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/button_list.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/red_line.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/red_line.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/file_info.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/file_info.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/pwm_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/pwm_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/motor.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/motor.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/lynx_usb_device.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/simple_device.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/simple_device.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_ftc_wifi_channel_selector.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_inputs.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_view_logs.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/activity_view_logs.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/pwms.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/pwms.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/button_list.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/f4a6077c1925cfc9af7408f212bf8a5868e370b4/output/res/layout/feedback.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/fb8323c863b6257ffc501e4de20ad8f6d880e31a/output/res/layout/activity_programming_mode.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
+        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/layout/activity_ftc_controller.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/i2cs.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/i2cs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/activity_blocks.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/fb8323c863b6257ffc501e4de20ad8f6d880e31a/output/res/layout/activity_blocks.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_outputs.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/analog_outputs.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/file_info.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/file_info.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/header.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/gray_line.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/matrix_devices.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/matrix_devices.xml"
+    },
+    {
+        "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/motor_list.xml",
+        "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/motor_list.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/lynx_module.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/color_list_preference_line_item.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/f4a6077c1925cfc9af7408f212bf8a5868e370b4/output/res/layout/color_list_preference_line_item.xml"
+    },
+    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo_controller_banner.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/servo_controller_banner.xml"
     },
@@ -222,5 +438,13 @@
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
         "source": "/Users/neelraja/.android/build-cache/94f8dfcd6ab6d07c2976198e75c10afc1956f65c/output/res/layout/legacy.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/analog_output_device.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/analog_output_device.xml"
+    },
+    {
+        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/layout/servo_controller_banner.xml",
+        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/layout/servo_controller_banner.xml"
     }
 ]
