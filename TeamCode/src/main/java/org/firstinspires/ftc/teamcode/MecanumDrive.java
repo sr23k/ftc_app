@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
@@ -31,6 +32,8 @@ public class MecanumDrive extends OpMode
     private DcMotor rightFront = null;
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
+    private Servo left = null;
+    private Servo right = null;
 
     /*
      * Code to run ONCE when the driver hits INIT
@@ -46,6 +49,8 @@ public class MecanumDrive extends OpMode
         rightFront = hardwareMap.get(DcMotor.class, "rf");
         leftBack  = hardwareMap.get(DcMotor.class, "lb");
         rightBack = hardwareMap.get(DcMotor.class, "rb");
+        left = hardwareMap.get(Servo.class, "left");
+        right = hardwareMap.get(Servo.class, "right");
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
@@ -53,6 +58,12 @@ public class MecanumDrive extends OpMode
         rightFront.setDirection(DcMotor.Direction.REVERSE);
         leftBack.setDirection(DcMotor.Direction.FORWARD);
         rightBack.setDirection(DcMotor.Direction.REVERSE);
+
+        left.setDirection(Servo.Direction.FORWARD);
+        right.setDirection(Servo.Direction.REVERSE);
+
+        left.setPosition(0);
+        right.setPosition(0);
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
@@ -102,24 +113,29 @@ public class MecanumDrive extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FRPower = (gamepad1.left_stick_x - gamepad1.left_stick_y);
+            FLPower = (-gamepad1.left_stick_x - gamepad1.left_stick_y);
+            BRPower = (-gamepad1.left_stick_x - gamepad1.left_stick_y);
+            BLPower = (gamepad1.left_stick_x - gamepad1.left_stick_y);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
-            FRPower = (-gamepad1.right_stick_x);
+            FRPower = (gamepad1.right_stick_x);
             FLPower = (-gamepad1.right_stick_x);
             BRPower = (gamepad1.right_stick_x);
-            BLPower = (gamepad1.right_stick_x);
+            BLPower = (-gamepad1.right_stick_x);
+        }
+
+        if(gamepad2.a){
+            left.setPosition(1);
+            right.setPosition(1);
         }
 
         //Clip Range
-        FRPower = Range.clip(FRPower,-1.0,1.0);
-        FLPower = Range.clip(FLPower,-1.0,1.0);
-        BLPower = Range.clip(BLPower,-1.0,1.0);
-        BRPower = Range.clip(BRPower,-1.0,1.0);
+        FRPower = Range.clip(FRPower,-0.5,0.5);
+        FLPower = Range.clip(FLPower,-0.5,0.5);
+        BLPower = Range.clip(BLPower,-0.5,0.5);
+        BRPower = Range.clip(BRPower,-0.5,0.5);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower);
