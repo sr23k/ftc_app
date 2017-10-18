@@ -32,6 +32,7 @@ public class MecanumDrive extends OpMode
     private DcMotor rightFront = null;
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
+    private DcMotor lift = null;
     private Servo left = null;
     private Servo right = null;
 
@@ -49,6 +50,7 @@ public class MecanumDrive extends OpMode
         rightFront = hardwareMap.get(DcMotor.class, "rf");
         leftBack  = hardwareMap.get(DcMotor.class, "lb");
         rightBack = hardwareMap.get(DcMotor.class, "rb");
+        lift = hardwareMap.get(DcMotor.class, "lift");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
 
@@ -60,7 +62,9 @@ public class MecanumDrive extends OpMode
         rightBack.setDirection(DcMotor.Direction.REVERSE);
 
         left.setDirection(Servo.Direction.FORWARD);
-        right.setDirection(Servo.Direction.REVERSE);
+        right.setDirection(Servo.Direction.FORWARD);
+
+        lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
         left.setPosition(0);
         right.setPosition(0);
@@ -94,6 +98,7 @@ public class MecanumDrive extends OpMode
         double FRPower = 0;
         double BLPower = 0;
         double BRPower = 0;
+        double liftpower = 0.5;
         int threshold = 20;
 
         // Choose to drive using either Tank Mode, or POV Mode
@@ -113,10 +118,10 @@ public class MecanumDrive extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_x - gamepad1.left_stick_y);
-            FLPower = (-gamepad1.left_stick_x - gamepad1.left_stick_y);
-            BRPower = (-gamepad1.left_stick_x - gamepad1.left_stick_y);
-            BLPower = (gamepad1.left_stick_x - gamepad1.left_stick_y);
+            FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
@@ -129,6 +134,19 @@ public class MecanumDrive extends OpMode
         if(gamepad2.a){
             left.setPosition(1);
             right.setPosition(1);
+        }
+
+        if(gamepad2.b) {
+            left.setPosition(0);
+            right.setPosition(0);
+        }
+
+        if(gamepad1.left_bumper){
+            lift.setPower(liftpower);
+        }else if(gamepad1.right_bumper){
+            lift.setPower(-liftpower);
+        }else{
+            lift.setPower(0);
         }
 
         //Clip Range
