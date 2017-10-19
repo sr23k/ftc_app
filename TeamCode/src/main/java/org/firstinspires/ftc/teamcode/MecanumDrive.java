@@ -23,7 +23,6 @@ import java.lang.Math;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
-@TeleOp(name="MecanumDrive", group="Drive Opmodes")
 public class MecanumDrive extends OpMode
 {
     // Declare OpMode members.
@@ -32,10 +31,14 @@ public class MecanumDrive extends OpMode
     private DcMotor rightFront = null;
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
-    private DcMotor lift = null;
-    private Servo left = null;
-    private Servo right = null;
 
+    public MecanumDrive(DcMotor lf, DcMotor rf, DcMotor lb, DcMotor rb){
+
+        leftFront = lf;
+        rightFront = rf;
+        leftBack = lb;
+        rightBack = rb;
+    }
     /*
      * Code to run ONCE when the driver hits INIT
      */
@@ -46,13 +49,6 @@ public class MecanumDrive extends OpMode
         // Initialize the hardware variables. Note that the strings used here as parameters
         // to 'get' must correspond to the names assigned during the robot configuration
         // step (using the FTC Robot Controller app on the phone).
-        leftFront  = hardwareMap.get(DcMotor.class, "lf");
-        rightFront = hardwareMap.get(DcMotor.class, "rf");
-        leftBack  = hardwareMap.get(DcMotor.class, "lb");
-        rightBack = hardwareMap.get(DcMotor.class, "rb");
-        lift = hardwareMap.get(DcMotor.class, "lift");
-        left = hardwareMap.get(Servo.class, "left");
-        right = hardwareMap.get(Servo.class, "right");
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
@@ -61,13 +57,6 @@ public class MecanumDrive extends OpMode
         leftBack.setDirection(DcMotor.Direction.FORWARD);
         rightBack.setDirection(DcMotor.Direction.REVERSE);
 
-        left.setDirection(Servo.Direction.FORWARD);
-        right.setDirection(Servo.Direction.FORWARD);
-
-        lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-
-        left.setPosition(0);
-        right.setPosition(0);
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
@@ -98,7 +87,6 @@ public class MecanumDrive extends OpMode
         double FRPower = 0;
         double BLPower = 0;
         double BRPower = 0;
-        double liftpower = 0.5;
         int threshold = 20;
 
         // Choose to drive using either Tank Mode, or POV Mode
@@ -118,10 +106,10 @@ public class MecanumDrive extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
@@ -131,25 +119,8 @@ public class MecanumDrive extends OpMode
             BLPower = (-gamepad1.right_stick_x);
         }
 
-        if(gamepad2.a){
-            left.setPosition(1);
-            right.setPosition(1);
-        }
 
-        if(gamepad2.b) {
-            left.setPosition(0);
-            right.setPosition(0);
-        }
-
-        if(gamepad1.left_bumper){
-            lift.setPower(liftpower);
-        }else if(gamepad1.right_bumper){
-            lift.setPower(-liftpower);
-        }else{
-            lift.setPower(0);
-        }
-
-        //Clip Range
+        //Clip Range, 50% power
         FRPower = Range.clip(FRPower,-0.5,0.5);
         FLPower = Range.clip(FLPower,-0.5,0.5);
         BLPower = Range.clip(BLPower,-0.5,0.5);

@@ -61,9 +61,13 @@ public class FinalTeleOp extends OpMode
         leftBack.setDirection(DcMotor.Direction.FORWARD);
         rightBack.setDirection(DcMotor.Direction.REVERSE);
 
-        left.setDirection(Servo.Direction.FORWARD);
+        left.setDirection(Servo.Direction.REVERSE);
         right.setDirection(Servo.Direction.FORWARD);
 
+        leftFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        leftBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        rightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
         left.setPosition(0);
@@ -134,6 +138,9 @@ public class FinalTeleOp extends OpMode
         if(gamepad2.a){
             left.setPosition(1);
             right.setPosition(1);
+        }else{
+            left.setPosition(0);
+            right.setPosition(0);
         }
 
         if(gamepad2.b) {
