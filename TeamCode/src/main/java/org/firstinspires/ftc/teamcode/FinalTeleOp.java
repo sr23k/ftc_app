@@ -102,7 +102,7 @@ public class FinalTeleOp extends OpMode
         double FRPower = 0;
         double BLPower = 0;
         double BRPower = 0;
-        double liftpower = 0.5;
+        double liftpower = 0.9;
         int threshold = 20;
 
         // Choose to drive using either Tank Mode, or POV Mode
@@ -122,10 +122,10 @@ public class FinalTeleOp extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
@@ -136,11 +136,8 @@ public class FinalTeleOp extends OpMode
         }
 
         if(gamepad2.a){
-            left.setPosition(1);
-            right.setPosition(1);
-        }else{
-            left.setPosition(0);
-            right.setPosition(0);
+            left.setPosition(0.9);
+            right.setPosition(0.9);
         }
 
         if(gamepad2.b) {
