@@ -1,15 +1,7 @@
 [
     {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml",
-        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/src/main/res/menu/ftc_robot_controller.xml"
-    },
-    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml",
         "source": "/Users/neelraja/.android/build-cache/5e3129eb4063cb204d5373ef4094b1edf1789c76/output/res/menu/menu_server.xml"
-    },
-    {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml",
-        "source": "/Users/mkorlipara/.android/build-cache/24ecc4fdedf89a27582d38b6f1776c8c1ce17bb1/output/res/menu/main_menu.xml"
     },
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml",
@@ -18,9 +10,5 @@
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml",
         "source": "/Users/neelraja/.android/build-cache/8fb1b5f2d3dfb95b7bbed965fc3837f8570a567c/output/res/menu/main_menu.xml"
-    },
-    {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml",
-        "source": "/Users/mkorlipara/.android/build-cache/fb8323c863b6257ffc501e4de20ad8f6d880e31a/output/res/menu/menu_server.xml"
     }
 ]

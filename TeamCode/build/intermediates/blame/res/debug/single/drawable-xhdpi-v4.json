@@ -4,23 +4,11 @@
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_robotcontroller.png"
     },
     {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png",
-        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_robotcontroller.png"
-    },
-    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png"
     },
     {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
-        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png"
-    },
-    {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png"
-    },
-    {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png"
     }
 ]

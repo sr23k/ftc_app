@@ -6,13 +6,5 @@
     {
         "merged": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
         "source": "/Users/neelraja/Documents/Programming/ftc_app/FtcRobotController/src/main/res/drawable-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_shape.xml",
-        "source": "/Users/mkorlipara/.android/build-cache/e414ca38bf2a7652e2a347f121035d5b778f6a9f/output/res/drawable-hdpi-v4/button_shape.xml"
-    },
-    {
-        "merged": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/Users/mkorlipara/Desktop/ftc_app/FtcRobotController/src/main/res/drawable-hdpi/ic_launcher.png"
     }
 ]
