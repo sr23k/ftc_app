@@ -120,11 +120,11 @@ public class MecanumDrive extends OpMode
         }
 
 
-        //Clip Range, 50% power
-        FRPower = Range.clip(FRPower,-0.5,0.5);
-        FLPower = Range.clip(FLPower,-0.5,0.5);
-        BLPower = Range.clip(BLPower,-0.5,0.5);
-        BRPower = Range.clip(BRPower,-0.5,0.5);
+        //Clip Range, 100% power
+        FRPower = Range.clip(FRPower,-1.0,1.0);
+        FLPower = Range.clip(FLPower,-1.0,1.0);
+        BLPower = Range.clip(BLPower,-1.0,1.0);
+        BRPower = Range.clip(BRPower,-1.0,1.0);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower);
