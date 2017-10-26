@@ -3,6 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
@@ -33,6 +34,7 @@ public class FinalTeleOp extends OpMode
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
     private DcMotor lift = null;
+    private DcMotor lift2 = null;
     private Servo left = null;
     private Servo right = null;
 
@@ -51,6 +53,7 @@ public class FinalTeleOp extends OpMode
         leftBack  = hardwareMap.get(DcMotor.class, "lb");
         rightBack = hardwareMap.get(DcMotor.class, "rb");
         lift = hardwareMap.get(DcMotor.class, "lift");
+        lift2 = hardwareMap.get(DcMotor.class, "lift2");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
 
@@ -69,7 +72,13 @@ public class FinalTeleOp extends OpMode
         rightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        lift2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
+        if(lift.getDirection() == DcMotor.Direction.FORWARD){
+            lift2.setDirection(DcMotor.Direction.REVERSE);
+        }else{
+            lift2.setDirection(DcMotor.Direction.FORWARD);
+        }
         left.setPosition(0);
         right.setPosition(0);
 
@@ -147,10 +156,15 @@ public class FinalTeleOp extends OpMode
 
         if(gamepad1.left_bumper){
             lift.setPower(liftpower);
+            lift2.setPower(liftpower);
+
         }else if(gamepad1.right_bumper){
             lift.setPower(-liftpower);
+            lift2.setPower(-liftpower);
+
         }else{
             lift.setPower(0);
+            lift2.setPower(0);
         }
 
         //Clip Range
