@@ -31,12 +31,13 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
+import java.lang.*;
 
 
 /**
@@ -52,7 +53,7 @@ import com.qualcomm.robotcore.util.Range;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
-@TeleOp(name="Auto Red", group="Linear Opmode")
+@Autonomous(name="Auto Red", group="Linear Opmode")
 public class RedAuto extends LinearOpMode {
 
     // Declare OpMode members.
@@ -61,11 +62,21 @@ public class RedAuto extends LinearOpMode {
     private DcMotor rightFront = null;
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
-    private DcMotor lift = null;
+    private DcMotor lift1 = null;
     private DcMotor lift2 = null;
     private Servo left = null;
     private Servo right = null;
     private ColorSensor color = null;
+
+    double FLPower = 0;
+    double FRPower = 0;
+    double BLPower = 0;
+    double BRPower = 0;
+    double liftpower = 0.9;
+
+    final double countsPerRev = 537.6;
+    final int countsPerInch = 1000;
+    int robotposition = 0;
 
     @Override
     public void runOpMode() {
@@ -80,7 +91,7 @@ public class RedAuto extends LinearOpMode {
         rightFront = hardwareMap.get(DcMotor.class, "rf");
         leftBack  = hardwareMap.get(DcMotor.class, "lb");
         rightBack = hardwareMap.get(DcMotor.class, "rb");
-        lift = hardwareMap.get(DcMotor.class, "lift");
+        lift1 = hardwareMap.get(DcMotor.class, "lift");
         lift2 = hardwareMap.get(DcMotor.class, "lift2");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
@@ -98,16 +109,33 @@ public class RedAuto extends LinearOpMode {
         leftBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+        lift1.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        if(lift.getDirection() == DcMotor.Direction.FORWARD){
+        if(lift1.getDirection() == DcMotor.Direction.FORWARD){ //lol, never did figure out the direction
             lift2.setDirection(DcMotor.Direction.REVERSE);
         }else{
             lift2.setDirection(DcMotor.Direction.FORWARD);
         }
+
+        while(rightBack.getCurrentPosition() != 0 || leftFront.getCurrentPosition() != 0 || leftBack.getCurrentPosition() != 0){
+            leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            leftBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            rightBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        }
+
+        leftFront.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        rightFront.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        leftBack.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        rightBack.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
         left.setPosition(0);
         right.setPosition(0);
+
+        boolean LEDOn = true;
+
+        color.enableLed(LEDOn);
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -116,31 +144,50 @@ public class RedAuto extends LinearOpMode {
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
 
-            // Setup a variable for each drive wheel to save power level for telemetry
-            double leftPower;
-            double rightPower;
+            forward(0.1);
 
-            // Choose to drive using either Tank Mode, or POV Mode
-            // Comment out the method that's not used.  The default below is POV.
 
-            // POV Mode uses left stick to go forward, and right stick to turn.
-            // - This uses basic math to combine motions and is easier to drive straight.
-            double drive = -gamepad1.left_stick_y;
-            double turn  =  gamepad1.right_stick_x;
-            leftPower    = Range.clip(drive + turn, -1.0, 1.0) ;
-            rightPower   = Range.clip(drive - turn, -1.0, 1.0) ;
 
-            // Tank Mode uses one stick to control each wheel.
-            // - This requires no math, but it is hard to drive forward slowly and keep straight.
-            // leftPower  = -gamepad1.left_stick_y ;
-            // rightPower = -gamepad1.right_stick_y ;
 
             // Send calculated power to wheels
 
             // Show the elapsed game time and wheel power.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
-            telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
+            telemetry.addData("Motors", "left (%.2f), right (%.2f)", FLPower, FRPower);
             telemetry.update();
+        }
+    }
+    public void lift(long time){
+        lift1.setPower(liftpower);
+        lift2.setPower(liftpower);
+        sleep(time);
+    }
+    public void forward(double distance){
+        int distanceInCounts = (int)Math.round(distance * countsPerInch);
+        leftFront.setTargetPosition(distanceInCounts);
+        rightBack.setTargetPosition(distanceInCounts);
+        rightFront.setTargetPosition(-distanceInCounts);
+        leftBack.setTargetPosition(-distanceInCounts);
+        telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
+    }
+    public void backward(double distance){
+        robotposition += distance;
+    }
+    public void right(double distance){
+        robotposition += distance;
+    }
+    public void left(double distance){
+        robotposition += distance;
+    }
+    public boolean isAllianceColor(){
+        double threshold = 2;
+        boolean b = false;
+        if(color.blue() < threshold && color.red() > threshold){
+            telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
+            return true;
+        }else{
+            telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
+            return false;
         }
     }
 }

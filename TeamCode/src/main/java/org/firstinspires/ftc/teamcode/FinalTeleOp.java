@@ -80,8 +80,14 @@ public class FinalTeleOp extends OpMode
         }else{
             lift2.setDirection(DcMotor.Direction.FORWARD);
         }
+
         left.setPosition(0);
         right.setPosition(0);
+
+        leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        leftBack.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        rightBack.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
@@ -169,10 +175,10 @@ public class FinalTeleOp extends OpMode
         }
 
         //Clip Range
-        FRPower = Range.clip(FRPower,-0.5,0.5);
-        FLPower = Range.clip(FLPower,-0.5,0.5);
-        BLPower = Range.clip(BLPower,-0.5,0.5);
-        BRPower = Range.clip(BRPower,-0.5,0.5);
+        FRPower = Range.clip(FRPower,-0.65,0.65);
+        FLPower = Range.clip(FLPower,-0.65,0.65);
+        BLPower = Range.clip(BLPower,-0.65,0.65);
+        BRPower = Range.clip(BRPower,-0.65,0.65);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower);
