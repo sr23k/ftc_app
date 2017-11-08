@@ -118,12 +118,7 @@ public class RedAuto extends LinearOpMode {
             lift2.setDirection(DcMotor.Direction.FORWARD);
         }
 
-        while(rightBack.getCurrentPosition() != 0 || leftFront.getCurrentPosition() != 0 || leftBack.getCurrentPosition() != 0){
-            leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-            rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-            leftBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-            rightBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        }
+        resetEncoders();
 
         leftFront.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         rightFront.setMode(DcMotor.RunMode.RUN_TO_POSITION);
@@ -157,27 +152,38 @@ public class RedAuto extends LinearOpMode {
             telemetry.update();
         }
     }
-    public void lift(long time){
-        lift1.setPower(liftpower);
-        lift2.setPower(liftpower);
-        sleep(time);
+    public void lift(long time, boolean up){
+        if(up){
+            lift1.setPower(liftpower);
+            lift2.setPower(liftpower);
+        }else{
+            lift1.setPower(-liftpower);
+            lift2.setPower(-liftpower);
+        }
+
+        sleep(time * 1000); //set in terms of seconds
+        lift1.setPower(0);
+        lift2.setPower(0);
     }
     public void forward(double distance){
         int distanceInCounts = (int)Math.round(distance * countsPerInch);
-        leftFront.setTargetPosition(distanceInCounts);
-        rightBack.setTargetPosition(distanceInCounts);
-        rightFront.setTargetPosition(-distanceInCounts);
-        leftBack.setTargetPosition(-distanceInCounts);
+        leftFront.setTargetPosition(leftFront.getCurrentPosition() + distanceInCounts);
+        rightBack.setTargetPosition(rightBack.getCurrentPosition() + distanceInCounts);
+        rightFront.setTargetPosition(rightFront.getCurrentPosition() - distanceInCounts);
+        leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public void backward(double distance){
-        robotposition += distance;
+        int distanceInCounts = (int)Math.round(distance * countsPerInch);
+        leftFront.setTargetPosition(leftFront.getCurrentPosition() - distanceInCounts);
+        rightBack.setTargetPosition(rightBack.getCurrentPosition() - distanceInCounts);
+        rightFront.setTargetPosition(rightFront.getCurrentPosition() + distanceInCounts);
+        leftBack.setTargetPosition(leftBack.getCurrentPosition() + distanceInCounts);
+        telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public void right(double distance){
-        robotposition += distance;
     }
     public void left(double distance){
-        robotposition += distance;
     }
     public boolean isAllianceColor(){
         double threshold = 2;
@@ -188,6 +194,14 @@ public class RedAuto extends LinearOpMode {
         }else{
             telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
             return false;
+        }
+    }
+    public void resetEncoders(){
+        while(rightBack.getCurrentPosition() != 0 || leftFront.getCurrentPosition() != 0 || leftBack.getCurrentPosition() != 0){
+            leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            rightFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            leftBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+            rightBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         }
     }
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82555e69-cecd-4e15-b6f2-a89e1e25c68c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAuto.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAuto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -72,16 +71,10 @@
       <file leaf-file-name="RedAuto.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAuto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8133748">
-              <caret line="170" column="177" selection-start-line="170" selection-start-column="177" selection-end-line="170" selection-end-column="177" />
+            <state vertical-scroll-proportion="4.964539">
+              <caret line="180" column="66" selection-start-line="180" selection-start-column="66" selection-end-line="180" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7580#7581#0" expanded="true" />
-                <element signature="e#7621#7622#0" expanded="true" />
-                <element signature="e#7661#7662#0" expanded="true" />
-                <element signature="e#7702#7703#0" expanded="true" />
-                <element signature="e#7741#7742#0" expanded="true" />
-                <element signature="e#7782#7783#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2856,6 +2849,22 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ftc_app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3038,22 +3047,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="samples" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ftc_app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3288,7 +3281,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.47643593" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32786885" sideWeight="0.47643593" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32863188" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3357,6 +3350,53 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MecanumDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MecanumDrive#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="180" column="46" selection-start-line="180" selection-start-column="46" selection-end-line="180" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAuto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="170" column="177" selection-start-line="170" selection-start-column="177" selection-end-line="170" selection-end-column="177" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRColor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MecanumDrive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3484,6 +3524,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3494,26 +3542,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAuto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8133748">
-          <caret line="170" column="177" selection-start-line="170" selection-start-column="177" selection-end-line="170" selection-end-column="177" />
+        <state vertical-scroll-proportion="4.964539">
+          <caret line="180" column="66" selection-start-line="180" selection-start-column="66" selection-end-line="180" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7580#7581#0" expanded="true" />
-            <element signature="e#7621#7622#0" expanded="true" />
-            <element signature="e#7661#7662#0" expanded="true" />
-            <element signature="e#7702#7703#0" expanded="true" />
-            <element signature="e#7741#7742#0" expanded="true" />
-            <element signature="e#7782#7783#0" expanded="true" />
           </folding>
         </state>
       </provider>
