@@ -53,6 +53,8 @@ import java.lang.*;
  * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
  */
 
+/** Shoutout to Rishi Parikh for being a true hiu */
+
 @Autonomous(name="Auto Red", group="Linear Opmode")
 public class RedAuto extends LinearOpMode {
 
