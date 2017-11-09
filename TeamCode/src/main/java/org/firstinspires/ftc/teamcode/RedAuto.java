@@ -182,8 +182,20 @@ public class RedAuto extends LinearOpMode {
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public void right(double distance){
+        int distanceInCounts = (int)Math.round(distance * countsPerInch);
+        leftFront.setTargetPosition(leftFront.getCurrentPosition() - distanceInCounts);
+        rightBack.setTargetPosition(rightBack.getCurrentPosition() - distanceInCounts);
+        rightFront.setTargetPosition(rightFront.getCurrentPosition() + distanceInCounts);
+        leftBack.setTargetPosition(leftBack.getCurrentPosition() + distanceInCounts);
+        telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public void left(double distance){
+        int distanceInCounts = (int)Math.round(distance * countsPerInch);
+        leftFront.setTargetPosition(leftFront.getCurrentPosition() + distanceInCounts);
+        rightBack.setTargetPosition(rightBack.getCurrentPosition() + distanceInCounts);
+        rightFront.setTargetPosition(rightFront.getCurrentPosition() - distanceInCounts);
+        leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
+        telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public boolean isAllianceColor(){
         double threshold = 2;
@@ -203,5 +215,13 @@ public class RedAuto extends LinearOpMode {
             leftBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
             rightBack.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         }
+    }
+    public void open(){
+        left.setPosition(0.75);
+        right.setPosition(0.75);
+    }
+    public void close(){
+        left.setPosition(0);
+        right.setPosition(0);
     }
 }
