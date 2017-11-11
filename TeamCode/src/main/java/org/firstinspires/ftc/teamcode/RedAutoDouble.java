@@ -63,7 +63,7 @@ import java.lang.*;
 
 /** Shoutout to Rishi Parikh for being a true hiu */
 
-@Autonomous(name="Auto Red", group="Linear Opmode")
+@Autonomous(name="Auto Red Double", group="Linear Opmode")
 public class RedAutoDouble extends LinearOpMode {
 
     public static final String TAG = "Vuforia VuMark Sample";
@@ -81,6 +81,7 @@ public class RedAutoDouble extends LinearOpMode {
     private DcMotor lift2 = null;
     private Servo left = null;
     private Servo right = null;
+    private Servo jewel = null;
     private ColorSensor color = null;
 
     double FLPower = 0;
@@ -125,6 +126,7 @@ public class RedAutoDouble extends LinearOpMode {
         lift2 = hardwareMap.get(DcMotor.class, "lift2");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
+        jewel = hardwareMap.get(Servo.class, "jewel");
         color = hardwareMap.get(ColorSensor.class, "color");
 
         leftFront.setDirection(DcMotor.Direction.FORWARD);
@@ -157,6 +159,7 @@ public class RedAutoDouble extends LinearOpMode {
 
         left.setPosition(0);
         right.setPosition(0);
+        jewel.setPosition(0.5);
 
         boolean LEDOn = true;
 
@@ -202,6 +205,20 @@ public class RedAutoDouble extends LinearOpMode {
             }
             //Start movement
             backward(0.1);
+
+            //Hit Jewel
+            scan = true;
+            while(scan){
+                if(isRed()){
+                    jewel.setPosition(1);
+                    scan = false;
+                }else if(isBlue()){
+                    jewel.setPosition(0);
+                    scan = false;
+                }
+            }
+
+            forward(1);
             rotate(-90);
             forward(1);
             rotate(-90);
@@ -221,6 +238,15 @@ public class RedAutoDouble extends LinearOpMode {
             }
 
 
+            backward(1);
+            rotate(180);
+            //Go to glyph pile
+            open();
+            forward(1);
+            close(); //guess at glyph?
+            lift(0.5,true);
+            rotate(180);
+            forward(2);
 
 
             // Send calculated power to wheels
@@ -231,7 +257,7 @@ public class RedAutoDouble extends LinearOpMode {
             telemetry.update();
         }
     }
-    public void lift(long time, boolean up){
+    public void lift(double time, boolean up){
         if(up){
             lift1.setPower(liftpower);
             lift2.setPower(liftpower);
@@ -240,7 +266,7 @@ public class RedAutoDouble extends LinearOpMode {
             lift2.setPower(-liftpower);
         }
 
-        sleep(time * 1000); //set in terms of seconds
+        sleep(Math.round(time * 1000)); //set in terms of seconds
         lift1.setPower(0);
         lift2.setPower(0);
     }
@@ -286,10 +312,21 @@ public class RedAutoDouble extends LinearOpMode {
         leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
-    public boolean isAllianceColor(){
+    public boolean isRed(){
         double threshold = 2;
         boolean b = false;
         if(color.blue() < threshold && color.red() > threshold){
+            telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
+            return true;
+        }else{
+            telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
+            return false;
+        }
+    }
+    public boolean isBlue(){
+        double threshold = 2;
+        boolean b = false;
+        if(color.blue() > threshold && color.red() < threshold){
             telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
             return true;
         }else{
