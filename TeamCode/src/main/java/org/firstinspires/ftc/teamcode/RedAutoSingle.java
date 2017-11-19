@@ -331,8 +331,8 @@ public class RedAutoSingle extends LinearOpMode {
         }
     }
     public void open(){
-        left.setPosition(0.75);
-        right.setPosition(0.75);
+        left.setPosition(0.85);
+        right.setPosition(0.85);
     }
     public void close(){
         left.setPosition(0);
