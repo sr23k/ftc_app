@@ -58,10 +58,10 @@ public class FinalTeleOp extends OpMode
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
-        leftFront.setDirection(DcMotor.Direction.FORWARD);
-        rightFront.setDirection(DcMotor.Direction.REVERSE);
-        leftBack.setDirection(DcMotor.Direction.FORWARD);
-        rightBack.setDirection(DcMotor.Direction.REVERSE);
+        leftFront.setDirection(DcMotor.Direction.REVERSE);
+        rightFront.setDirection(DcMotor.Direction.FORWARD);
+        leftBack.setDirection(DcMotor.Direction.REVERSE);
+        rightBack.setDirection(DcMotor.Direction.FORWARD);
 
         left.setDirection(Servo.Direction.REVERSE);
         right.setDirection(Servo.Direction.FORWARD);
@@ -129,10 +129,10 @@ public class FinalTeleOp extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            FLPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
-            BRPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
-            BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FRPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
+            FLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BLPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
@@ -163,16 +163,16 @@ public class FinalTeleOp extends OpMode
         }
 
         //Clip Range
-        FRPower = Range.clip(FRPower,-0.25,0.25);
-        FLPower = Range.clip(FLPower,-0.25,0.25);
-        BLPower = Range.clip(BLPower,-0.25,0.25);
-        BRPower = Range.clip(BRPower,-0.25,0.25);
+        double FRPower2 = Range.clip(FRPower,-0.25,0.25);
+        double FLPower2 = Range.clip(FLPower,-0.25,0.25);
+        double BLPower2 = Range.clip(BLPower,-0.25,0.25);
+        double BRPower2 = Range.clip(BRPower,-0.25,0.25);
 
         // Send calculated power to wheels
-        leftFront.setPower(FLPower);
-        rightFront.setPower(FRPower);
-        leftBack.setPower(BLPower);
-        rightBack.setPower(BRPower);
+        leftFront.setPower(FLPower2);
+        rightFront.setPower(FRPower2);
+        leftBack.setPower(BLPower2);
+        rightBack.setPower(BRPower2);
 
         // Show the elapsed game time and wheel power.
         telemetry.addData("Status", "Run Time: " + runtime.toString());
