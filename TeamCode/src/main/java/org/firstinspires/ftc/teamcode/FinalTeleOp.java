@@ -130,8 +130,8 @@ public class FinalTeleOp extends OpMode
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
             FRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            FLPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BRPower = (-gamepad1.left_stick_y - gamepad1.left_stick_x);
+            FLPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
+            BRPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
             BLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
         }
 
