@@ -163,10 +163,10 @@ public class FinalTeleOp extends OpMode
         }
 
         //Clip Range
-        FRPower = Range.clip(FRPower,-0.4,0.4);
-        FLPower = Range.clip(FLPower,-0.4,0.4);
-        BLPower = Range.clip(BLPower,-0.4,0.4);
-        BRPower = Range.clip(BRPower,-0.4,0.4);
+        FRPower = Range.clip(FRPower,-0.25,0.25);
+        FLPower = Range.clip(FLPower,-0.25,0.25);
+        BLPower = Range.clip(BLPower,-0.25,0.25);
+        BRPower = Range.clip(BRPower,-0.25,0.25);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower);
