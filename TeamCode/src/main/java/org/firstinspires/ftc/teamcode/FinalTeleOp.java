@@ -109,8 +109,10 @@ public class FinalTeleOp extends OpMode
         double FRPower = 0;
         double BLPower = 0;
         double BRPower = 0;
+        double speed = 0.3;
         double liftpower = 0.9;
         int threshold = 20;
+        boolean control = false;
 
         // Choose to drive using either Tank Mode, or POV Mode
         // Comment out the method that's not used.  The default below is POV.
@@ -162,11 +164,22 @@ public class FinalTeleOp extends OpMode
             lift.setPower(0);
         }
 
+        //Toggle between coarse and fine control modes
+        if(gamepad1.y){
+            control = !control; //true equals fine control
+
+        }
+        if(control){
+            speed = 0.1;
+        }else{
+            speed = 0.3;
+        }
+
         //Clip Range
-        double FRPower2 = Range.clip(FRPower,-0.3,0.3);
-        double FLPower2 = Range.clip(FLPower,-0.3,0.3);
-        double BLPower2 = Range.clip(BLPower,-0.3,0.3);
-        double BRPower2 = Range.clip(BRPower,-0.3,0.3);
+        double FRPower2 = Range.clip(FRPower,-speed,speed);
+        double FLPower2 = Range.clip(FLPower,-speed,speed);
+        double BLPower2 = Range.clip(BLPower,-speed,speed);
+        double BRPower2 = Range.clip(BRPower,-speed,speed);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower2);
