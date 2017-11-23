@@ -38,6 +38,8 @@ public class FinalTeleOp extends OpMode
     private Servo left = null;
     private Servo right = null;
 
+    boolean control = false;
+
     /*
      * Code to run ONCE when the driver hits INIT
      */
@@ -111,8 +113,7 @@ public class FinalTeleOp extends OpMode
         double BRPower = 0;
         double speed = 0.3;
         double liftpower = 0.9;
-        int threshold = 20;
-        boolean control = false;
+        int threshold = 20; //joystick dead zones
 
         // Choose to drive using either Tank Mode, or POV Mode
         // Comment out the method that's not used.  The default below is POV.
