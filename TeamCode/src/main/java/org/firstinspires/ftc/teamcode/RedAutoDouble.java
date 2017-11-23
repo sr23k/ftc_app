@@ -80,8 +80,6 @@ public class RedAutoDouble extends LinearOpMode {
     private DcMotor lift1 = null;
     private Servo left = null;
     private Servo right = null;
-    private Servo jewel = null;
-    private ColorSensor color = null;
 
     double FLPower = 0;
     double FRPower = 0;
@@ -124,8 +122,6 @@ public class RedAutoDouble extends LinearOpMode {
         lift1 = hardwareMap.get(DcMotor.class, "lift");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
-        jewel = hardwareMap.get(Servo.class, "jewel");
-        color = hardwareMap.get(ColorSensor.class, "color");
 
         leftFront.setDirection(DcMotor.Direction.FORWARD);
         rightFront.setDirection(DcMotor.Direction.REVERSE);
@@ -149,13 +145,12 @@ public class RedAutoDouble extends LinearOpMode {
         leftBack.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         rightBack.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
-        left.setPosition(0);
-        right.setPosition(0);
-        jewel.setPosition(0.5);
+        left.setPosition(0.2);
+        right.setPosition(0.2);
 
         boolean LEDOn = true;
 
-        color.enableLed(LEDOn);
+        //color.enableLed(LEDOn);
 
         boolean scan = true;
 
@@ -200,15 +195,13 @@ public class RedAutoDouble extends LinearOpMode {
 
             //Hit Jewel
             scan = true;
-            while(scan){
+            /*while(scan){
                 if(isRed()){
-                    jewel.setPosition(1);
                     scan = false;
                 }else if(isBlue()){
-                    jewel.setPosition(0);
                     scan = false;
                 }
-            }
+            }*/
 
             forward(1);
             rotate(-90);
@@ -301,7 +294,7 @@ public class RedAutoDouble extends LinearOpMode {
         leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
-    public boolean isRed(){
+    /*public boolean isRed(){
         double threshold = 2;
         boolean b = false;
         if(color.blue() < threshold && color.red() > threshold){
@@ -312,7 +305,7 @@ public class RedAutoDouble extends LinearOpMode {
             return false;
         }
     }
-    public boolean isBlue(){
+    /*public boolean isBlue(){
         double threshold = 2;
         boolean b = false;
         if(color.blue() > threshold && color.red() < threshold){
@@ -322,7 +315,7 @@ public class RedAutoDouble extends LinearOpMode {
             telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
             return false;
         }
-    }
+    }*/
     public void resetEncoders(){
         while(rightBack.getCurrentPosition() != 0 || leftFront.getCurrentPosition() != 0 || leftBack.getCurrentPosition() != 0){
             leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
@@ -336,7 +329,7 @@ public class RedAutoDouble extends LinearOpMode {
         right.setPosition(0.85);
     }
     public void close(){
-        left.setPosition(0);
-        right.setPosition(0);
+        left.setPosition(0.2);
+        right.setPosition(0.2);
     }
 }

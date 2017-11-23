@@ -72,8 +72,8 @@ public class FinalTeleOp extends OpMode
         rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        left.setPosition(0);
-        right.setPosition(0);
+        left.setPosition(0.2);
+        right.setPosition(0.2);
 
         leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -148,14 +148,14 @@ public class FinalTeleOp extends OpMode
         }
 
         if(gamepad2.b) {
-            left.setPosition(0);
-            right.setPosition(0);
+            left.setPosition(0.2);
+            right.setPosition(0.2);
         }
 
-        if(gamepad1.left_bumper){
+        if(gamepad2.left_bumper){
             lift.setPower(liftpower);
 
-        }else if(gamepad1.right_bumper){
+        }else if(gamepad2.right_bumper){
             lift.setPower(-liftpower);
 
         }else{
@@ -163,10 +163,10 @@ public class FinalTeleOp extends OpMode
         }
 
         //Clip Range
-        double FRPower2 = Range.clip(FRPower,-0.25,0.25);
-        double FLPower2 = Range.clip(FLPower,-0.25,0.25);
-        double BLPower2 = Range.clip(BLPower,-0.25,0.25);
-        double BRPower2 = Range.clip(BRPower,-0.25,0.25);
+        double FRPower2 = Range.clip(FRPower,-0.3,0.3);
+        double FLPower2 = Range.clip(FLPower,-0.3,0.3);
+        double BLPower2 = Range.clip(BLPower,-0.3,0.3);
+        double BRPower2 = Range.clip(BRPower,-0.3,0.3);
 
         // Send calculated power to wheels
         leftFront.setPower(FLPower2);
