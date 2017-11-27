@@ -166,7 +166,7 @@ public class FinalTeleOp extends OpMode
         }
 
         //Toggle between coarse and fine control modes
-        if(gamepad1.y){
+        if(gamepad1.a){
             control = !control; //true equals fine control
 
         }
