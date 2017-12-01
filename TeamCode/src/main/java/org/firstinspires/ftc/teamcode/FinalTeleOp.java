@@ -166,7 +166,7 @@ public class FinalTeleOp extends OpMode
         }
 
         //Toggle between coarse and fine control modes
-        if(gamepad1.a){
+       /* if(gamepad1.a){
             control = !control; //true equals fine control
 
         }
@@ -175,13 +175,20 @@ public class FinalTeleOp extends OpMode
         }else{
             speed = 0.3;
         }
-
+        
         //Clip Range
         double FRPower2 = Range.clip(FRPower,-speed,speed);
         double FLPower2 = Range.clip(FLPower,-speed,speed);
         double BLPower2 = Range.clip(BLPower,-speed,speed);
         double BRPower2 = Range.clip(BRPower,-speed,speed);
-
+        */
+        
+         //Scale controller output power to acceptable motor power range
+         double FRPower2 = (((0.2 - -0.2) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.2))
+         double FLPower2 = (((0.2 - -0.2) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.2))
+         double BLPower2 = (((0.2 - -0.2) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.2))
+         double BRPower2 = (((0.2 - -0.2) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.2))
+         
         // Send calculated power to wheels
         leftFront.setPower(FLPower2);
         rightFront.setPower(FRPower2);
