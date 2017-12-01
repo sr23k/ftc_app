@@ -154,8 +154,15 @@ public class FinalTeleOp extends OpMode
             left.setPosition(0.2);
             right.setPosition(0.2);
         }
+          //controls the lift motor
+          
+       if(Math.abs(gamepad2.left_stick_x) != 0){
+       
+       lift.setPower = ((0.9 - (-0.9)) * (Range.clip(gamepad2.left_stick_x,-1.0,1.0) - (-1.0)) / (1.0 - (-1.0))) + (-0.9);
 
-        if(gamepad2.left_bumper){
+       }
+          
+       /* if(gamepad2.left_bumper){
             lift.setPower(liftpower);
 
         }else if(gamepad2.right_bumper){
@@ -163,7 +170,7 @@ public class FinalTeleOp extends OpMode
 
         }else{
             lift.setPower(0);
-        }
+        }*/
 
         //Toggle between coarse and fine control modes
        /* if(gamepad1.a){
@@ -174,20 +181,19 @@ public class FinalTeleOp extends OpMode
             speed = 0.1;
         }else{
             speed = 0.3;
-        }
+        }*/
         
-        //Clip Range
-        double FRPower2 = Range.clip(FRPower,-speed,speed);
-        double FLPower2 = Range.clip(FLPower,-speed,speed);
-        double BLPower2 = Range.clip(BLPower,-speed,speed);
-        double BRPower2 = Range.clip(BRPower,-speed,speed);
-        */
+        double FRPower2 = Range.clip(FRPower,-1.0,1.0);
+        double FLPower2 = Range.clip(FLPower,-1.0,1.0);
+        double BLPower2 = Range.clip(BLPower,-1.0,1.0);
+        double BRPower2 = Range.clip(BRPower,-1.0,1.0);
+        
         
          //Scale controller output power to acceptable motor power range
-         double FRPower2 = (((0.2 - -0.2) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.2))
-         double FLPower2 = (((0.2 - -0.2) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.2))
-         double BLPower2 = (((0.2 - -0.2) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.2))
-         double BRPower2 = (((0.2 - -0.2) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.2))
+         double FRPower2 = (((0.2 - -0.2) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double FLPower2 = (((0.2 - -0.2) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double BLPower2 = (((0.2 - -0.2) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double BRPower2 = (((0.2 - -0.2) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.2));
          
         // Send calculated power to wheels
         leftFront.setPower(FLPower2);
