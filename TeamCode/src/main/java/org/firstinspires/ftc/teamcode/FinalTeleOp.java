@@ -158,7 +158,7 @@ public class FinalTeleOp extends OpMode
           
        if(Math.abs(gamepad2.left_stick_x) != 0){
        
-       lift.setPower = ((0.9 - (-0.9)) * (Range.clip(gamepad2.left_stick_x,-1.0,1.0) - (-1.0)) / (1.0 - (-1.0))) + (-0.9);
+       lift.setPower(((0.9 - (-0.9)) * (Range.clip(gamepad2.left_stick_x,-1.0,1.0) - (-1.0)) / (1.0 - (-1.0))) + (-0.9));
 
        }else{
        lift.setPower(0.0);
