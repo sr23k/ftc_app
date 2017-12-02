@@ -203,7 +203,7 @@ public class FinalTeleOp extends OpMode
 
         // Show the elapsed game time and wheel power.
         telemetry.addData("Status", "Run Time: " + runtime.toString());
-        telemetry.addData("Motors", "left (%.2f), right (%.2f)", FLPower, FRPower);
+        telemetry.addData("Motors", "left (%.2f), right (%.2f)", FLPower3, FRPower3,BLPower3,BRPower3);
     }
 
     /*
