@@ -192,16 +192,16 @@ public class FinalTeleOp extends OpMode
         
         
          //Scale controller output power to acceptable motor power range
-         double FRPower2 = (((0.2 - -0.2) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.2));
-         double FLPower2 = (((0.2 - -0.2) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.2));
-         double BLPower2 = (((0.2 - -0.2) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.2));
-         double BRPower2 = (((0.2 - -0.2) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double FRPower3 = (((0.2 - -0.2) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double FLPower3 = (((0.2 - -0.2) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double BLPower3 = (((0.2 - -0.2) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.2));
+         double BRPower3 = (((0.2 - -0.2) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.2));
          
         // Send calculated power to wheels
-        leftFront.setPower(FLPower2);
-        rightFront.setPower(FRPower2);
-        leftBack.setPower(BLPower2);
-        rightBack.setPower(BRPower2);
+        leftFront.setPower(FLPower3);
+        rightFront.setPower(FRPower3);
+        leftBack.setPower(BLPower3);
+        rightBack.setPower(BRPower3);
 
         // Show the elapsed game time and wheel power.
         telemetry.addData("Status", "Run Time: " + runtime.toString());
