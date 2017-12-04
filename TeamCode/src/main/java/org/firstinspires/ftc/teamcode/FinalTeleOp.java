@@ -37,7 +37,6 @@ public class FinalTeleOp extends OpMode
     private DcMotor lift = null;
     private Servo left = null;
     private Servo right = null;
-    double servoPos = 0.2;
 
     boolean control = false;
 
@@ -146,34 +145,17 @@ public class FinalTeleOp extends OpMode
             BLPower = (-gamepad1.right_stick_x);
         }
 
+        if(gamepad2.a){
+            left.setPosition(0.85);
+            right.setPosition(0.85);
+        }
+
+        if(gamepad2.b) {
+            left.setPosition(0.2);
+            right.setPosition(0.2);
+        }
+
         if(gamepad2.left_bumper){
-            servoPos = servoPos + 0.3;
-            if(servoPos>1.0){
-                servoPos=1.0;
-            }
-            left.setPosition(servoPos);
-            right.setPosition(servoPos);
-        }
-
-        if(gamepad2.right_bumper) {
-            servoPos = servoPos - 0.3;
-            if(servoPos<0.2){
-                servoPos=0.2;
-            }
-            left.setPosition(servoPos);
-            right.setPosition(servoPos);
-        }
-        //controls the lift motor
-
-        if(Math.abs(gamepad2.left_stick_y) != 0){
-
-            lift.setPower(((0.9 - (-0.9)) * (Range.clip(gamepad2.left_stick_y,-1.0,1.0) - (-1.0)) / (1.0 - (-1.0))) + (-0.9));
-
-        }else{
-            lift.setPower(0.0);
-        }
-
-       /* if(gamepad2.left_bumper){
             lift.setPower(liftpower);
 
         }else if(gamepad2.right_bumper){
@@ -181,10 +163,10 @@ public class FinalTeleOp extends OpMode
 
         }else{
             lift.setPower(0);
-        }*/
+        }
 
         //Toggle between coarse and fine control modes
-       /* if(gamepad1.a){
+        if(gamepad1.a){
             control = !control; //true equals fine control
 
         }
@@ -192,29 +174,23 @@ public class FinalTeleOp extends OpMode
             speed = 0.1;
         }else{
             speed = 0.3;
-        }*/
+        }
 
-        double FRPower2 = Range.clip(FRPower,-1.0,1.0);
-        double FLPower2 = Range.clip(FLPower,-1.0,1.0);
-        double BLPower2 = Range.clip(BLPower,-1.0,1.0);
-        double BRPower2 = Range.clip(BRPower,-1.0,1.0);
-
-
-        //Scale controller output power to acceptable motor power range
-        double FRPower3 = (((0.25 - -0.25) * (FRPower - (-1.0)) / (1 - (-1))) + (-0.25));
-        double FLPower3 = (((0.25 - -0.25) * (FLPower - (-1.0)) / (1 - (-1))) + (-0.25));
-        double BLPower3 = (((0.25 - -0.25) * (BLPower - (-1.0)) / (1 - (-1))) + (-0.25));
-        double BRPower3 = (((0.25 - -0.25) * (BRPower - (-1.0)) / (1 - (-1))) + (-0.25));
+        //Clip Range
+        double FRPower2 = Range.clip(FRPower,-speed,speed);
+        double FLPower2 = Range.clip(FLPower,-speed,speed);
+        double BLPower2 = Range.clip(BLPower,-speed,speed);
+        double BRPower2 = Range.clip(BRPower,-speed,speed);
 
         // Send calculated power to wheels
-        leftFront.setPower(FLPower3);
-        rightFront.setPower(FRPower3);
-        leftBack.setPower(BLPower3);
-        rightBack.setPower(BRPower3);
+        leftFront.setPower(FLPower2);
+        rightFront.setPower(FRPower2);
+        leftBack.setPower(BLPower2);
+        rightBack.setPower(BRPower2);
 
         // Show the elapsed game time and wheel power.
         telemetry.addData("Status", "Run Time: " + runtime.toString());
-        telemetry.addData("Motors", "left (%.2f), right (%.2f)", FLPower3, FRPower3,BLPower3,BRPower3);
+        telemetry.addData("Motors", "left (%.2f), right (%.2f)", FLPower, FRPower);
     }
 
     /*
