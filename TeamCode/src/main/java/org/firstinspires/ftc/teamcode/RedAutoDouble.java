@@ -167,15 +167,22 @@ public class RedAutoDouble extends LinearOpMode {
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
 
+            /*
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
 
             /**
             while(scan){
                 if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
 
+<<<<<<< HEAD
                 /* Found an instance of the template. In the actual game, you will probably
                  * loop until this condition occurs, then move on to act accordingly depending
                  * on which VuMark was visible.
+=======
+                   //Found an instance of the template. In the actual game, you will probably
+                   //loop until this condition occurs, then move on to act accordingly depending
+                   //on which VuMark was visible. 
+>>>>>>> 7535d25d5b8a41c655a0b2d936d429cbfd896c52
                     telemetry.addData("VuMark", "%s visible", vuMark);
 
                     if (vuMark == RelicRecoveryVuMark.LEFT) {
@@ -191,8 +198,12 @@ public class RedAutoDouble extends LinearOpMode {
                     }
                     scan = false;
                 }
+<<<<<<< HEAD
             } */
 
+=======
+            }*/
+>>>>>>> 7535d25d5b8a41c655a0b2d936d429cbfd896c52
             //Start movement
             backward(0.1);
 
@@ -211,7 +222,7 @@ public class RedAutoDouble extends LinearOpMode {
             forward(1);
             rotate(-90);
 
-            if (vuMarkString.equals("left")) {
+            /*if (vuMarkString.equals("left")) {
                 left(0.1);
                 forward(0.1);
             }
@@ -223,7 +234,7 @@ public class RedAutoDouble extends LinearOpMode {
 
             if (vuMarkString.equals("center")) {
                 forward(0.1);
-            }
+            }*/
 
 
             backward(1);
