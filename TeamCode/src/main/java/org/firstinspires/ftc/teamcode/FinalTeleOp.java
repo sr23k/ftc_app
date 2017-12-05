@@ -74,8 +74,8 @@ public class FinalTeleOp extends OpMode
         rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
 
-        left.setPosition(0.2);
-        right.setPosition(0.2);
+        left.setPosition(0.22);
+        right.setPosition(0.22);
 
         leftFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         rightFront.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
