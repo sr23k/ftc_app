@@ -311,25 +311,25 @@ public class BlueAutoDouble extends LinearOpMode {
         int distanceInCounts = (int)Math.round(distance * countsPerInch);
         leftFront.setTargetPosition(leftFront.getCurrentPosition() - distanceInCounts);
         rightBack.setTargetPosition(rightBack.getCurrentPosition() - distanceInCounts);
-        rightFront.setTargetPosition(rightFront.getCurrentPosition() + distanceInCounts);
-        leftBack.setTargetPosition(leftBack.getCurrentPosition() + distanceInCounts);
+        rightFront.setTargetPosition(rightFront.getCurrentPosition() - distanceInCounts);
+        leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
         if(leftFront.getCurrentPosition() >= leftFront.getTargetPosition()){
-            leftFront.setPower(speed);
+            leftFront.setPower(-speed);
         }else{
             leftFront.setPower(0);
         }
         if(rightBack.getCurrentPosition() >= rightBack.getTargetPosition()){
-            rightBack.setPower(speed);
+            rightBack.setPower(-speed);
         }else{
             rightBack.setPower(0);
         }
         if(rightFront.getCurrentPosition() >= rightFront.getTargetPosition()){
-            rightFront.setPower(speed);
+            rightFront.setPower(-speed);
         }else{
             rightFront.setPower(0);
         }
         if(leftBack.getCurrentPosition() >= leftBack.getTargetPosition()){
-            leftBack.setPower(speed);
+            leftBack.setPower(-speed);
         }else{
             leftBack.setPower(0);
         }
@@ -341,6 +341,26 @@ public class BlueAutoDouble extends LinearOpMode {
         rightBack.setTargetPosition(rightBack.getCurrentPosition() - distanceInCounts);
         rightFront.setTargetPosition(rightFront.getCurrentPosition() + distanceInCounts);
         leftBack.setTargetPosition(leftBack.getCurrentPosition() + distanceInCounts);
+        if(leftFront.getCurrentPosition() >= leftFront.getTargetPosition()){
+            leftFront.setPower(-speed);
+        }else{
+            leftFront.setPower(0);
+        }
+        if(rightBack.getCurrentPosition() >= rightBack.getTargetPosition()){
+            rightBack.setPower(-speed);
+        }else{
+            rightBack.setPower(0);
+        }
+        if(rightFront.getCurrentPosition() <= rightFront.getTargetPosition()){
+            rightFront.setPower(speed);
+        }else{
+            rightFront.setPower(0);
+        }
+        if(leftBack.getCurrentPosition() <= leftBack.getTargetPosition()){
+            leftBack.setPower(speed);
+        }else{
+            leftBack.setPower(0);
+        }
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public void left(double distance){
@@ -349,6 +369,26 @@ public class BlueAutoDouble extends LinearOpMode {
         rightBack.setTargetPosition(rightBack.getCurrentPosition() + distanceInCounts);
         rightFront.setTargetPosition(rightFront.getCurrentPosition() - distanceInCounts);
         leftBack.setTargetPosition(leftBack.getCurrentPosition() - distanceInCounts);
+        if(leftFront.getCurrentPosition() <= leftFront.getTargetPosition()){
+            leftFront.setPower(speed);
+        }else{
+            leftFront.setPower(0);
+        }
+        if(rightBack.getCurrentPosition() <= rightBack.getTargetPosition()){
+            rightBack.setPower(speed);
+        }else{
+            rightBack.setPower(0);
+        }
+        if(rightFront.getCurrentPosition() >= rightFront.getTargetPosition()){
+            rightFront.setPower(-speed);
+        }else{
+            rightFront.setPower(0);
+        }
+        if(leftBack.getCurrentPosition() >= leftBack.getTargetPosition()){
+            leftBack.setPower(-speed);
+        }else{
+            leftBack.setPower(0);
+        }
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
     public boolean isRed(){

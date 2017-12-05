@@ -39,6 +39,8 @@ public class FinalTeleOp extends OpMode
     private Servo right = null;
 
     boolean control = false;
+    boolean bPrevState = false;
+    boolean bCurrState = false;
 
     /*
      * Code to run ONCE when the driver hits INIT
@@ -164,17 +166,23 @@ public class FinalTeleOp extends OpMode
         }else{
             lift.setPower(0);
         }
+        bCurrState = gamepad1.a;
 
+        // check for button state transitions.
         //Toggle between coarse and fine control modes
-        if(gamepad1.a){
-            control = !control; //true equals fine control
+        if (bCurrState && (bCurrState != bPrevState))  {
 
+            // button is transitioning to a pressed state.  Toggle LED.
+            // on button press, enable the LED.
+            control = !control; //true equals fine control
+            if(control){
+                speed = 0.1;
+            }else{
+                speed = 0.3;
+            }
         }
-        if(control){
-            speed = 0.1;
-        }else{
-            speed = 0.3;
-        }
+
+        bPrevState = bCurrState;
 
         //Clip Range
         double FRPower2 = Range.clip(Range.scale(FRPower, -1, 1, -speed, speed), -1, 1);

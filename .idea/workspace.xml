@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82555e69-cecd-4e15-b6f2-a89e1e25c68c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/FinalTeleOp.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/FinalTeleOp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/RedAutoDouble.class" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/classes/debug/org/firstinspires/ftc/teamcode/RedAutoDouble.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/outputs/apk/TeamCode-debug.apk" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/apk/TeamCode-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/pre-dexed/debug/debug_3a2299e750039bbbad41ccfc709ce22bd777b873.jar" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/pre-dexed/debug/debug_3a2299e750039bbbad41ccfc709ce22bd777b873.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/BlueAutoDouble.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/BlueAutoDouble.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ftc_app.iws" />
@@ -63,10 +47,23 @@
       <file leaf-file-name="FinalTeleOp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.333334">
-              <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MecanumDrive.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MecanumDrive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MecanumDrive#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -88,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoSense">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +94,8 @@
       <file leaf-file-name="BlueAutoDouble.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/BlueAutoDouble.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21276596">
-              <caret line="286" column="66" selection-start-line="286" selection-start-column="66" selection-end-line="286" selection-end-column="66" />
+            <state vertical-scroll-proportion="-1.3404255">
+              <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -2859,7 +2856,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
+    <option name="x" value="40" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="787" />
@@ -3396,7 +3393,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="72" y="23" width="1400" height="787" extended-state="0" />
+    <frame x="40" y="23" width="1400" height="787" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3817,17 +3814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MecanumDrive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MecanumDrive#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/VisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3852,14 +3838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAutoDouble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAutoSingle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3867,14 +3845,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoSense">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3886,10 +3856,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoSense">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RedAutoDouble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MecanumDrive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="54" selection-start-column="8" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MecanumDrive#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/FinalTeleOp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.333334">
-          <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3898,8 +3895,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/BlueAutoDouble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21276596">
-          <caret line="286" column="66" selection-start-line="286" selection-start-column="66" selection-end-line="286" selection-end-column="66" />
+        <state vertical-scroll-proportion="-1.3404255">
+          <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
           <folding />
         </state>
       </provider>
