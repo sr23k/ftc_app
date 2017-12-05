@@ -62,7 +62,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 
 /** Shoutout to Rishi Parikh for being a true hiu */
 
-@Autonomous(name="Auto Blue Double", group="Linear Opmode")
+@Autonomous(name="Auto Red Double", group="Linear Opmode")
 public class RedAutoDouble extends LinearOpMode {
 
     public static final String TAG = "Vuforia VuMark Sample";
