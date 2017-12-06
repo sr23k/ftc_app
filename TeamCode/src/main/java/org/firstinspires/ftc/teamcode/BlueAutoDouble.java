@@ -74,11 +74,9 @@ public class BlueAutoDouble extends LinearOpMode {
     private DcMotor leftBack = null;
     private DcMotor rightBack = null;
     private DcMotor lift1 = null;
-    private DcMotor lift2 = null;
     private Servo left = null;
     private Servo right = null;
     private Servo jewel = null;
-    private ColorSensor color = null;
 
     double FLPower = 0;
     double FRPower = 0;
@@ -121,11 +119,10 @@ public class BlueAutoDouble extends LinearOpMode {
         leftBack  = hardwareMap.get(DcMotor.class, "lb");
         rightBack = hardwareMap.get(DcMotor.class, "rb");
         lift1 = hardwareMap.get(DcMotor.class, "lift");
-        lift2 = hardwareMap.get(DcMotor.class, "lift2");
         left = hardwareMap.get(Servo.class, "left");
         right = hardwareMap.get(Servo.class, "right");
         jewel = hardwareMap.get(Servo.class, "jewel");
-        color = hardwareMap.get(ColorSensor.class, "color");
+        //color = hardwareMap.get(ColorSensor.class, "color");
 
         leftFront.setDirection(DcMotor.Direction.FORWARD);
         rightFront.setDirection(DcMotor.Direction.REVERSE);
@@ -140,13 +137,6 @@ public class BlueAutoDouble extends LinearOpMode {
         rightFront.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         rightBack.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
         lift1.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-        lift2.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
-
-        if(lift1.getDirection() == DcMotor.Direction.FORWARD){ //lol, never did figure out the direction
-            lift2.setDirection(DcMotor.Direction.REVERSE);
-        }else{
-            lift2.setDirection(DcMotor.Direction.FORWARD);
-        }
 
         resetEncoders();
 
@@ -161,7 +151,7 @@ public class BlueAutoDouble extends LinearOpMode {
 
         boolean LEDOn = true;
 
-        color.enableLed(LEDOn);
+        //color.enableLed(LEDOn);
 
         boolean scan = true;
 
@@ -205,7 +195,7 @@ public class BlueAutoDouble extends LinearOpMode {
             backward(0.1);
 
             //Hit Jewel
-            scan = true;
+            /*scan = true;
             while(scan){
                 if(isBlue()){
                     jewel.setPosition(1);
@@ -214,7 +204,7 @@ public class BlueAutoDouble extends LinearOpMode {
                     jewel.setPosition(0);
                     scan = false;
                 }
-            }
+            }*/
 
             forward(1);
             rotate(90);
@@ -259,15 +249,12 @@ public class BlueAutoDouble extends LinearOpMode {
     public void lift(double time, boolean up){
         if(up){
             lift1.setPower(liftpower);
-            lift2.setPower(liftpower);
         }else{
             lift1.setPower(-liftpower);
-            lift2.setPower(-liftpower);
         }
 
         sleep(Math.round(time * 1000)); //set in terms of seconds
         lift1.setPower(0);
-        lift2.setPower(0);
     }
     public void rotate(double degrees){
         final int countsPerDegree = 750; //Calculate for 10 degrees with protractor, then divide and hope it works
@@ -391,7 +378,7 @@ public class BlueAutoDouble extends LinearOpMode {
         }
         telemetry.addData("Encoder Position", "lf (%.2f) , lb (%.2f) , rb (%.2f) ", leftFront.getCurrentPosition(), leftBack.getCurrentPosition(), rightBack.getCurrentPosition());
     }
-    public boolean isRed(){
+    /*public boolean isRed(){
         double threshold = 2;
         boolean b = false;
         if(color.blue() < threshold && color.red() > threshold){
@@ -412,7 +399,7 @@ public class BlueAutoDouble extends LinearOpMode {
             telemetry.addData("Colors", "red , blue ", color.blue(), color.red());
             return false;
         }
-    }
+    }*/
     public void resetEncoders(){
         while(rightBack.getCurrentPosition() != 0 || leftFront.getCurrentPosition() != 0 || leftBack.getCurrentPosition() != 0){
             leftFront.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);

@@ -114,7 +114,7 @@ public class FinalTeleOp extends OpMode
         double BLPower = 0;
         double BRPower = 0;
         double speed = 0.3;
-        double liftpower = 0.9;
+        double liftpower = 0.95;
         int threshold = 20; //joystick dead zones
 
         // Choose to drive using either Tank Mode, or POV Mode
@@ -134,17 +134,17 @@ public class FinalTeleOp extends OpMode
 
         //Mecanum Drive Mode uses left stick to strafe and go forwards and backwards; right stick to rotate
         if(Math.abs(gamepad1.left_stick_y) != 0 || Math.abs(gamepad1.left_stick_x) != 0){
-            FRPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
-            FLPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BRPower = (gamepad1.left_stick_y - gamepad1.left_stick_x);
-            BLPower = (gamepad1.left_stick_y + gamepad1.left_stick_x);
+            FRPower = FRPower + (gamepad1.left_stick_y + gamepad1.left_stick_x);
+            FLPower = FLPower + (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BRPower = BRPower + (gamepad1.left_stick_y - gamepad1.left_stick_x);
+            BLPower = BLPower + (gamepad1.left_stick_y + gamepad1.left_stick_x);
         }
 
         if(Math.abs(gamepad1.right_stick_x) != 0){
-            FRPower = (gamepad1.right_stick_x);
-            FLPower = (-gamepad1.right_stick_x);
-            BRPower = (gamepad1.right_stick_x);
-            BLPower = (-gamepad1.right_stick_x);
+            FRPower = FRPower + (gamepad1.right_stick_x);
+            FLPower = FLPower + (-gamepad1.right_stick_x);
+            BRPower = BRPower + (gamepad1.right_stick_x);
+            BLPower = BLPower + (-gamepad1.right_stick_x);
         }
 
         if(gamepad2.a){
@@ -157,10 +157,10 @@ public class FinalTeleOp extends OpMode
             right.setPosition(0.2);
         }
 
-        if(gamepad2.left_bumper){
+        if(gamepad2.left_stick_y > 0){
             lift.setPower(liftpower);
 
-        }else if(gamepad2.right_bumper){
+        }else if(gamepad2.left_stick_y < 0){
             lift.setPower(-liftpower);
 
         }else{
