@@ -38,8 +38,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 /**
  * Demonstrates empty OpMode
  */
-@Autonomous(name = "Concept: NullOp", group = "Concept")
-@Disabled
+@Autonomous(name = "Servo Test", group = "Test")
 public class ServoPosReport extends OpMode {
 
   private ElapsedTime runtime = new ElapsedTime();
@@ -76,11 +75,10 @@ public class ServoPosReport extends OpMode {
   @Override
   public void loop() {
     posleft = left.getPosition();
-    right.getPosition();
+    posright = right.getPosition();
     telemetry.setAutoClear(false);
 
-    telemetry.addData("Left Servo: ", posleft);
-    telemetry.addData("Right Servo: ", posright);
+    telemetry.addData("Servos", "left (%.2f), right (%.2f)", posleft, posright);
     telemetry.update();
   }
 }
